@@ -4,6 +4,20 @@ body{
 
 .custom-icon{
     margin: 20px 20px 20px 10px;
+
+}
+.brand{
+    margin:0 0 0 70px;
+    /* color:lightblue ; */
+    /* font-family: 'Emilys Candy', cursive; */
+    font-family: 'Croissant One', cursive;
+    /* font-family: 'Updock', cursive; */
+    font-size: 30px;
+}
+.nav-item-font{
+    font-family: 'Lobster Two', cursive;
+    
+    
 }
 
 .nav-button{
