@@ -1,5 +1,6 @@
 body{
     background-color: rgb(231, 253, 254);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .custom-icon{
@@ -8,16 +9,8 @@ body{
 }
 .brand{
     margin:0 0 0 70px;
-    /* color:lightblue ; */
-    /* font-family: 'Emilys Candy', cursive; */
     font-family: 'Croissant One', cursive;
-    /* font-family: 'Updock', cursive; */
     font-size: 30px;
-}
-.nav-item-font{
-    font-family: 'Lobster Two', cursive;
-    
-    
 }
 
 .nav-button{
