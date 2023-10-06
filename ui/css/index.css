@@ -26,3 +26,17 @@ body{
 .margin-custom{
     margin-left: 15px;
 }
+
+.index-page{
+    height:700px;
+
+}
+
+.feature-section{
+    height:170px;
+}
+.industry-feature > img{
+    height: 50px;
+    width:50px;
+    margin-left: 200px;
+}
