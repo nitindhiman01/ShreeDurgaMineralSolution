@@ -28,8 +28,7 @@ body{
 }
 
 .index-page{
-    height:700px;
-
+    height:90vh;
 }
 
 .feature-section{
@@ -39,4 +38,16 @@ body{
     height: 50px;
     width:50px;
     margin-left: 200px;
+}
+
+.main-headline{
+    width: 300px;
+    position: relative;
+    margin-left: 70px;
+    top: 30%;
+}
+
+.main-quote{
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
 }
