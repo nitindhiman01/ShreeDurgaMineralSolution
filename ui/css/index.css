@@ -35,8 +35,8 @@ body{
     height:170px;
 }
 .industry-feature > img{
-    height: 50px;
-    width:50px;
+    height: 100px;
+    width:100px;
     margin-left: 200px;
 }
 
@@ -50,4 +50,16 @@ body{
 .main-quote{
     font-weight: 600;
     font-family: 'Playfair Display', serif;
+}
+
+.custom-icons> img{
+    height:100px;
+    width:100px;
+}
+.custom-icons{
+    display:inline-block;
+    margin:50px 110px 50px 150px;
+
+
+
 }
