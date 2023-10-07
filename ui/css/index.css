@@ -40,7 +40,6 @@ body{
     margin-left: 200px;
 }
 
-<<<<<<<<< Temporary merge branch 1
 .main-headline{
     width: 300px;
     position: relative;
@@ -52,16 +51,14 @@ body{
     font-weight: 600;
     font-family: 'Playfair Display', serif;
 }
-=========
+
 .custom-icons> img{
     height:100px;
     width:100px;
 }
+
 .custom-icons{
     display:inline-block;
     margin:50px 110px 50px 150px;
-
-
-
 }
->>>>>>>>> Temporary merge branch 2
+
