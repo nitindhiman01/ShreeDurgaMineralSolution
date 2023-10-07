@@ -41,7 +41,14 @@ body{
     margin-left: 200px;
 }
 
-.custom-icon > img{
-    height:10px;
-    width:5px;
+.custom-icons> img{
+    height:100px;
+    width:100px;
+}
+.custom-icons{
+    display:inline-block;
+    margin:50px 110px 50px 150px;
+
+
+
 }
