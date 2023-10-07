@@ -36,7 +36,12 @@ body{
     height:170px;
 }
 .industry-feature > img{
-    height: 50px;
-    width:50px;
+    height: 100px;
+    width:100px;
     margin-left: 200px;
+}
+
+.custom-icon > img{
+    height:10px;
+    width:5px;
 }
