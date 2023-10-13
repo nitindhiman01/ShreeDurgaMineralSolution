@@ -32,7 +32,12 @@ body{
 }
 
 .feature-section{
-    height:170px;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
 }
 .industry-feature > img{
     height: 100px;
@@ -59,6 +64,10 @@ body{
 
 .custom-icons{
     display:inline-block;
-    margin:50px 110px 50px 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
 }
 
