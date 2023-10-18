@@ -29,6 +29,18 @@ body{
 
 .index-page{
     height:90vh;
+    background: url("../resources/6212329.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-headline{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 65%;
+    justify-content: center;
 }
 
 .feature-section{
@@ -38,23 +50,25 @@ body{
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
+    margin: 50px 0;
 }
+
 .industry-feature > img{
     height: 100px;
     width:100px;
     margin-left: 200px;
 }
 
-.main-headline{
-    width: 300px;
-    position: relative;
-    margin-left: 70px;
-    top: 30%;
+.brand-name{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 90px;
 }
 
 .main-quote{
-    font-weight: 600;
-    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
 }
 
 .custom-icons> img{
@@ -68,6 +82,5 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-
-}
+}    
 
