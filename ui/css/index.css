@@ -11,6 +11,19 @@ body{
     margin:0 0 0 70px;
     font-family: 'Croissant One', cursive;
     font-size: 30px;
+    color: white;
+}
+
+.brand:hover{
+    color: white;
+}
+
+.nav-color{
+    color: white;
+}
+
+.nav-color:hover{
+    color: rgb(0, 35, 176);
 }
 
 .nav-button{
@@ -20,18 +33,31 @@ body{
 
 .custom-navbar{
     height: 100px;
-    background-color: rgb(255, 255, 255);
+    color: white;
 }
 
 .margin-custom{
     margin-left: 15px;
 }
 
-.index-page{
-    height:90vh;
+.home-container{
     background: url("../resources/6212329.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.home-container::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.index-page{
+    height:100vh;
 }
 
 .main-headline{
@@ -84,3 +110,30 @@ body{
     align-items: center;
 }    
 
+
+.shapedividers_com-5059{
+    overflow:hidden;
+    position:relative;
+}
+
+.shapedividers_com-5059::before{ 
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    background-size: 100% 84px;
+    background-position: 50% 100%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" fill="%23e7fdfe"/></svg>'); 
+}
+    
+@media (min-width:2100px){
+.shapedividers_com-5059::before{
+    background-size: 100% calc(2vw + 84px);
+}
+}
+     
