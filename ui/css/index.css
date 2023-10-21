@@ -3,10 +3,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.custom-icon{
-    margin: 20px 20px 20px 10px;
-
-}
 .brand{
     margin:0 0 0 70px;
     font-family: 'Croissant One', cursive;
@@ -29,6 +25,11 @@ body{
 .nav-button{
     text-decoration: none;
     color: inherit;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100%;
+    margin: 8px;
+    padding: 10px;
 }
 
 .custom-navbar{
@@ -60,6 +61,26 @@ body{
     height:100vh;
 }
 
+@keyframes brand-animation {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes sub-head-animation {
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .main-headline{
     display: flex;
     flex-direction: column;
@@ -89,12 +110,17 @@ body{
     font-family: 'Playfair Display', serif;
     color: white;
     font-size: 90px;
+    animation: brand-animation 1.5s ease-in-out;
+    text-shadow: 10px;
 }
 
 .main-quote{
     font-size: 18px;
     font-weight: 400;
     color: white;
+    animation: sub-head-animation 1.5s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
 }
 
 .custom-icons> img{
