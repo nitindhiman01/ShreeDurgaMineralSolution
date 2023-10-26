@@ -32,7 +32,56 @@ body{
 
 }
 .card{
-    display:flex;
-    justify-content: space-between;
-    
+    border-radius: 50px;
+    margin: 30px;
+    transition: all 500ms ease;
 }
+
+.card:hover{
+   outline-style:unset;
+}
+
+
+.card-first{
+    height:300px;
+    width:280px;
+    border-radius: 50px;
+
+}
+
+.card-second{
+    height:300px;
+    width:280px;
+    border-radius: 50px;
+}
+
+.card-third{
+    height:300px;
+    width:280px;
+    border-radius: 50px;
+}
+
+.card-forth{
+    height:300px;
+    width:280px;
+    border-radius: 50px;
+}
+
+.card-fifth{
+    height:300px;
+    width:280px;
+    border-radius: 50px;
+}
+.card-sixth{
+    height:300px;
+    width:280px;
+    border-radius: 50px;
+}
+
+h5{
+    text-align: center;
+}
+p{
+    text-align:center;
+}
+

@@ -35,11 +35,21 @@ body{
 .custom-navbar{
     height: 100px;
     color: white;
+
 }
 
-.margin-custom{
+/*.margin-custom{
     margin-left: 15px;
+}*/
+
+.margin-custom{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    justify-items: center;
 }
+
+
 
 .home-container{
     background: url("../resources/6212329.jpg");
