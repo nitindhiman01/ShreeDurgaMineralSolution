@@ -1,27 +1,6 @@
 h1{
    text-align: center;
-   font-family: 'Montserrat', sans-serif;
-   
-}
-
-body{
-    background-color: rgb(231, 253, 254);
-    font-family: 'Montserrat', sans-serif;
-}
-.brand{
-    margin:0 0 0 70px;
-    font-family: 'Croissant One', cursive;
-    font-size: 30px;
-}
-
-.nav-button{
-    text-decoration: none;
-    color: inherit;
-}
-
-.custom-navbar{
-    height: 100px;
-    background-color: rgb(255, 255, 255);
+   font-family: 'Montserrat', sans-serif;  
 }
 
 .custom-products{
@@ -29,8 +8,17 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-around;
-
 }
+
+.page-head{
+    height: 236px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #00306e;
+}
+
 .card{
     border-radius: 50px;
     margin: 30px;
@@ -38,16 +26,13 @@ body{
 }
 
 .card:hover{
-   
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 .card-first{
     height:300px;
     width:280px;
     border-radius: 50px;
-
 }
 
 .card-second{
@@ -84,5 +69,6 @@ h5{
 }
 p{
     text-align:center;
-}
+} 
+     
 
