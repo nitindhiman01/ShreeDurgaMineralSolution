@@ -163,6 +163,42 @@ body{
     background-size: 100% calc(2vw + 90px);
 }
 }
-     
-     
+
+/* features section */
+
+.box-container{
+    margin: 100px 156px;
+}
+
+.water-features-section{
+    background-color: #00306e;
+    padding: 95px 50px;
+    color: #fff;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+.title-text{
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.water-features{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.feature-inner-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 240px;
+}
+
+.feature-section-img{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 20px;
+}
      
