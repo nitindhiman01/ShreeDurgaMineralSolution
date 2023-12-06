@@ -18,6 +18,18 @@ app.get("/products", function(req, res){
     res.render("product");
 });
 
+app.get("/login", function(req, res){
+    res.render("login");
+});
+
+app.get("/register", function(req, res){
+    res.render("register");
+})
+
+app.get("/booking", function(req, res){
+    res.render("booking");
+})
+
 app.listen(3000, function(req, res){
     console.log("Server Started!");
 });

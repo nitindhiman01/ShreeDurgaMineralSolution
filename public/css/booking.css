@@ -1,0 +1,38 @@
+.booking-container{
+    height:600px;
+    /* display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-content: center;
+    justify-content:flex-start; */
+    
+    background-attachment: fixed;
+    align-content: center;
+    
+    
+}
+.book-heading{
+  text-align: center;
+  font-weight: bold;
+  margin-top:40px;
+}
+.book-p{
+   text-align:center;
+   font-weight: lighter;
+}
+
+.book-contact{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.book-label{
+    margin-bottom:25px;
+}
+
+.booking-content{
+    margin-left:400px;
+    
+}
