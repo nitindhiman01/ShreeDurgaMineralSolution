@@ -5,9 +5,9 @@
     background-color: rgb(6, 144, 235);
     border-radius:40px;
 }
-h2{
+/* h2{
     padding:0 0 0 120px;
-}
+} */
 .support-box{
     padding: 0 0 0 130px;
 }
@@ -23,12 +23,12 @@ hr{
             mask: var(--mask);
   }
 
-h5{
+/* h5{
     text-align: left;
 }
 p{
     text-align: left;
-}
+} */
 .first-col{
     padding-left:70px;
 }

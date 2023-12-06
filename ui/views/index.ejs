@@ -1,6 +1,6 @@
 <%- include("partials/header") %>
 
-<div class="home-container">
+<div class="nav-container">
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container-fluid">
       <a class="navbar-brand brand" href="#">Mountain Drops</a>
@@ -29,15 +29,35 @@
       </div>
     </div>
   </nav>
-  <div class="index-page shapedividers_com-1409">
-    <div class="main-headline">
-      <h1 class="brand-name">Mountain Drops</h1>
-      <p class="main-quote">Purity defined in every drop.</p>
+</div>
+
+<div class="home-container">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/resources/home-container/index-carousel3.png" class="d-block w-100" alt="index-img-1">
+      </div>
+      <div class="carousel-item">
+        <img src="/resources/home-container/carousel2.png" class="d-block w-100" alt="index-img-2">
+      </div>
+      <div class="carousel-item">
+        <img src="/resources/home-container/carausal1.png" class="d-block w-100" alt="index-img-3">
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </div>
 
-<div class="industry-feature feature-section">
+
+
+<!-- <div class="box-container industry-feature feature-section">
   <div class="custom-icons">
     <img src="/resources/target.png" alt="...">
     <p>1000 Happy Customers</p>                
@@ -50,7 +70,7 @@
     <img src="/resources/jar_icon.png" alt="...">
     <p>500 jars daily </p>
   </div>
-</div>
+</div> -->
 
 <div class="box-container">
   <div class="water-features-section">
@@ -86,9 +106,68 @@
   </div>
 </div>
 
-<div class="Delivery-container">
-  <img class="img-dlvry" src="/resources/dlvry2.png" alt="....">
+<div class="box-container">
+  <h1 class="section-heading">Shop Mountain Drops Alkaline Mineral Water</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="/resources/250ml.jpg" class="card-img-top card-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">250ml Water Bottle</h5>
+          <p>Pack of 24 bottles</p>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/resources/bottle1.jpg" class="card-img-top card-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/resources/1ltr.jpg" class="card-img-top card-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/resources/5ltr.jpg" class="card-img-top card-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/resources/water-container.jpg" class="card-img-top card-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/resources/camper.jpg" class="card-img-top card-image" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 
 
 <%- include("partials/footer") %>
