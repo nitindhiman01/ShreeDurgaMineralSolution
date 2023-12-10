@@ -1,10 +1,22 @@
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .brand{
-    font-family: 'Croissant One', cursive;
+    font-family: 'Dosis', sans-serif;
     font-size: 30px;
+}
+
+h1, h2{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+}
+
+.flex-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
 }
 
 .nav-button{
@@ -22,74 +34,60 @@ body{
     height: 100px;
 }
 
-/* .margin-custom{
+.home-container{
+    padding-bottom: 80px;
+}
+
+/* industry feature section */
+
+.industry-feature{
     display: flex;
-    text-align: center;
-    justify-content: space-between;
-    justify-items: center;
-} */
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+}
 
-.feature-section{
-    height: 170px;
+.i-feature-card{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    margin: 50px 0;
-}
-
-.industry-feature > img{
-    height: 100px;
-    width:100px;
-    margin-left: 200px;
-}
-
-.brand-name{
-    font-family: 'Playfair Display', serif;
-    color: white;
-    font-size: 90px;
-    animation: brand-animation 1.5s ease-in-out;
-    text-shadow: 10px;
-}
-
-.main-quote{
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-    animation: sub-head-animation 1.5s ease-in-out;
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
-}
-
-.custom-icons> img{
-    height:100px;
-    width:100px;
-}
-
-.custom-icons{
-    display:inline-block;
-    display: flex;
+    padding: 40px;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-}    
+    box-shadow: 5px 6px 15px 4px #c4ddfe;
+    width: 23.33%;
+    border-radius: 25px;
+}
+
+.i-feature-card > img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.i-feature-card > p{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
 
 /* features section */
 
 .box-container{
-    margin: 100px 156px;
+    padding: 80px 186px;
 }
 
-.water-features-section{
-    background-color: #00306e;
-    padding: 95px 50px;
-    color: #fff;
-    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
+@media (max-width:748px){
+    .box-container{
+        padding: 40px 80px;
+    }
+}
+
+.feature-section-img{
+    height: 100px;
 }
 
 .title-text{
-    margin-bottom: 45px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
@@ -104,17 +102,29 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 240px;
+    max-width: 245px;
 }
 
-.feature-section-img{
-    height: 90px;
-    width: 90px;
-    margin-bottom: 20px;
+.feature-inner-box > p{
+    text-align: center;
+    font-size: 17px;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
 }
 
-.para-text{
-    color: #cfcfcf;
+.feature-inner-box > h4{
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.feature-section-img-container{
+    padding: 50px;
+    border-radius: 100%;
+    margin-bottom: 25px;
+    box-shadow: 5px 6px 15px 4px #c4ddfe;
 }
 
 /* Company about section */
@@ -166,4 +176,153 @@ body{
     height: auto;
     width: 100%;
     max-height: 350px;
+}
+
+
+/* Product Section */
+
+.section-heading{
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.section-sub-heading > p, .delivery-section-item-list{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.section-heading-color{
+    color: #379eff;
+}
+
+.index-product-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.index-product-right{
+    width: 50%;
+}
+
+.index-product-right > img{
+    width: 100%;
+}
+
+.index-product-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0 60px 0 20px;
+}
+
+.section-content > p{
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.7em;
+    margin-bottom: 30px;
+}
+
+.section-btn > a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 90px;
+    box-shadow: 0 20px 30px 0 rgba(41, 112, 250, 0.2);
+    background: #67b5ff linear-gradient(120deg, rgba(102, 150, 255, 0) 0%, #5d93ff 100%);
+}
+
+.section-btn > a:hover{
+    background:  #4d86ff linear-gradient(120deg, rgba(102, 150, 255, 0) 0%, #5b92ff 100%);
+}
+
+.delivery-subhead{
+    text-align: left;
+}
+
+.element-container{
+    padding: 0 20px 0 60px;
+}
+
+.delivery-subcontent-left > img{
+    height: 100px;
+    width: auto;
+}
+
+.delivery-subcontent-right > p{
+    margin-bottom: 0;
+}
+
+.delivery-section-content-item{
+    display: flex;
+    align-items: center;
+}
+
+.delivery-img{
+    padding-right: 20px;
+}
+
+/* Review section */
+
+.review-box{
+    box-shadow: 5px 6px 15px 4px #c4ddfe;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.review-container{
+    margin-bottom: 40px;
+}
+
+.star-review{
+    margin-bottom: 20px;
+}
+
+.star-review > img{
+    height: 18px;
+}
+
+.review-box-wrapper{
+    display: flex;
+    width: 33.33%;
+}
+
+.review-profile-img > img{
+    height: 55px;
+    width: auto;
+}
+
+.review-profile-img{
+    margin-right: 10px;
+}
+
+.review-profile-wrapper{
+    margin-top: 10px;
+}
+
+.review-box-content{
+    font-size: 18px;
+    text-align: left;
+}
+
+.review-profile-name > h6{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.review-profile-name > p{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.reviews-btn{
+    display: flex;
+    justify-content: center;
 }
