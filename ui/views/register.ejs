@@ -8,23 +8,23 @@
                     <h1 class="reg-heading">Register</h1>
                 </td>
                 <td>
-                    <div class="reg-data">
-                        <div class="row g-3 ">
-                            <div class="col-auto>
-                              <label for="inputUsername" class="col-form-label ">First Name</label>
+                    <form action="/register" method="post">
+                        <div class="reg-data">
+                            <div class="row g-3 ">
+                                <div class="col-auto">
+                                    <label for="Username" class="col-form-label" >Email Address</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="username" class="form-control" name="username" id="validationDefaultUsername" style="background-color:transparent;" aria-describedby="passwordHelpInline" required>
+                                </div>
                             </div>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="validationDefaultUsername" style="background-color:transparent;" aria-describedby="passwordHelpInline" required>
-                            </div>
+                            <label for="inputUsername" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control reg-col" name="password" aria-describedby="passwordHelpBlock">
+                            <label for="inputUsername" class="form-label">Confirm Password</label>
+                            <input type="password" id="inputPassword5" class="form-control reg-col" aria-describedby="passwordHelpBlock">
+                            <button type="submit" class="btn btn-outline-light reg-btn">Register</button>
                         </div>
-                        <label for="inputUsername" class="form-label">Last Name</label>
-                        <input type="text" id="inputPassword5" class="form-control reg-col" aria-describedby="passwordHelpBlock">
-                        <label for="inputUsername" class="form-label">Password</label>
-                        <input type="password" id="inputPassword5" class="form-control reg-col" aria-describedby="passwordHelpBlock">
-                        <label for="inputUsername" class="form-label">Confirm Password</label>
-                        <input type="password" id="inputPassword5" class="form-control reg-col" aria-describedby="passwordHelpBlock">
-                        <button type="button" class="btn btn-outline-light reg-btn">Register</button>
-                    </div>
+                    </form>
                 </td>
             </tr>
         </table>
