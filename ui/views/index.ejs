@@ -1,6 +1,7 @@
 <%- include("partials/header") %>
 
 <div class="nav-container">
+
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container-fluid">
       <a class="navbar-brand brand" href="#">Mountain Drops</a>
@@ -13,13 +14,13 @@
             <a class="nav-link nav-color" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-color" href="/products">Products</a>
+            <a class="nav-link nav-color" href="/products">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-color" href="#">Features</a>
+            <a class="nav-link nav-color" href="/booking">Subscribe</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-color" href="login">Login.</a>
+            <a class="nav-link nav-color" href="login">Contact us</a>
           </li>
         </ul>
         <div class="nav-icons">
@@ -56,22 +57,21 @@
 </div>
 
 <Section class="box-container">
-  <div class="industry-feature feature-section">
-    <div class="i-feature-card custom-icons">
+  <div class="row industry-feature feature-section">
+    <div class="col-lg-4 col-sm-6 i-feature-card custom-icons">
       <img src="/resources/target.png" alt="...">
       <p>1000+ Happy Customers</p>                
     </div>
-    <div class="i-feature-card custom-icons">
+    <div class="col-lg-4 col-sm-6 i-feature-card custom-icons">
       <img src="/resources/rtailer.png" alt="...">
       <p>100+ Retailers</p>
     </div>
-    <div class="i-feature-card custom-icons">
+    <div class="col-lg-4 col-sm-6 i-feature-card custom-icons">
       <img src="/resources/jar_icon.png" alt="...">
       <p>500+ jars daily </p>
     </div>
   </div>
 </Section>
-
 
 <div class="box-container">
   <div class="water-features-section">
@@ -209,8 +209,8 @@
       <div class="title-container">
         <h1 class="title-text">Customer <span class="section-heading-color">Reviews</span></h1>
       </div>
-      <div class="flex-section reviews">
-        <div class="review-box-wrapper">
+      <div class="row flex-section reviews">
+        <div class="col-lg-4 col-sm-6 review-box-wrapper">
           <div class="flex-section review-box">
             <div class="flex-section star-review">
               <img src="/resources/star.png" alt="stars">
@@ -235,8 +235,7 @@
             </div>
           </div>
         </div>
-
-        <div class="review-box-wrapper">
+        <div class="col-lg-4 col-sm-6 review-box-wrapper">
           <div class="flex-section review-box">
             <div class="flex-section star-review">
               <img src="/resources/star.png" alt="stars">
@@ -261,8 +260,7 @@
             </div>
           </div>
         </div>
-
-        <div class="review-box-wrapper">
+        <div class="col-lg-4 col-sm-6 review-box-wrapper">
           <div class="flex-section review-box">
             <div class="flex-section star-review">
               <img src="/resources/star.png" alt="stars">
@@ -286,8 +284,7 @@
               </div> 
             </div>
           </div>
-        </div>
-        
+        </div>        
       </div>
     </div>
     <div class="section-btn reviews-btn">
@@ -295,7 +292,5 @@
     </div>
   </div>
 </section>
-
-
 
 <%- include("partials/footer") %>

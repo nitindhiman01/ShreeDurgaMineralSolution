@@ -26,8 +26,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/mineralWaterDB", {useNewUrlParser : true});
-// mongoose.set("userCreateIndex", true);
+mongoose.connect("mongodb://127.0.0.1:27017/mineralWaterDB", {useNewUrlParser : true});
 
 const userSchema = new mongoose.Schema({
     username : String,
@@ -42,9 +41,6 @@ passport.use(User.createStrategy());
 
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-
-
-
 
 app.get("/", function(req, res){
     res.render("index");
@@ -81,8 +77,6 @@ app.post("/register", function(res, req){
         }
     });
 });
-
-
 
 app.listen(3000, function(req, res){
     console.log("Server Started!");

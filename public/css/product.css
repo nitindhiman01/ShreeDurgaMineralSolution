@@ -1,73 +1,124 @@
-/* h1{
-   text-align: center;
-   font-family: 'Montserrat', sans-serif;  
-} */
-
-.custom-products{
+.header-section{
+    background-color: #eef9ff;
+    height: 250px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.page-head{
-    height: 236px;
+.page-title-text{
+    text-align: center;
+    margin: 0 0 0.75em 0;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 61px;
+    letter-spacing: normal;
+}
+
+.page-breadcrumbs{
     display: flex;
     justify-content: center;
+}
+
+.breadcrumb-item > a{
+    background-color: #379eff;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.shapedividers_com-955{
+    overflow:hidden;
+    position:relative;
+    height: 200px;
+}
+
+.shapedividers_com-955::before{ 
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    background-size: 147% 213px;
+    background-position: 50% 0%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" fill="%23eef9ff"/></svg>'); 
+}
+    
+@media (min-width:2100px){
+    .shapedividers_com-955::before{
+        background-size: 147% calc(2vw + 213px);
+    }
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 24px 0 rgba(103, 151, 255, .1), 0 12px 64px 0 rgba(103, 151, 255, .1);
+    border-radius: 25px;
+    border: 0.8px solid #fff;
+    margin: 0 38px 32px 0;
+    padding: 24px 24px 30px;
     align-items: center;
-    color: white;
-    background-color: #00306e;
 }
 
-.card{
-    margin: 30px;
-    transition: all 500ms ease;
+.product-card-title{
+    margin: 24px 0 10px;
 }
 
-.card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.product-card-title > h5{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    line-height: 1.25;
 }
 
-.card-first{
-    height:300px;
-    width:280px;
-    border-radius: 50px;
+.product-price{
+    margin: 8px 0 16px 0;
 }
 
-.card-second{
-    height:300px;
-    width:280px;
-    border-radius: 50px;
+.product-price > h6{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
 }
 
-.card-third{
-    height:300px;
-    width:280px;
-    border-radius: 50px;
+.product-card-subhead > p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #626262;
 }
 
-.card-forth{
-    height:300px;
-    width:280px;
-    border-radius: 50px;
+.product-sub-wrapper{
+    display: flex;
 }
 
-.card-fifth{
-    height:300px;
-    width:280px;
-    border-radius: 50px;
-}
-.card-sixth{
-    height:300px;
-    width:280px;
-    border-radius: 50px;
+.product-card-img > img{
+    height: 300px;
+    width: auto;
 }
 
-/* h5{
-    text-align: center;
+.product-wrapper{
+    margin: 70px 0;
 }
-p{
-    text-align:center;
-}  */
+
+.header-product{
+    margin: 0 0 20px 192px;
+}
+
+.header-product > h5{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+     
+     
+     
      
 

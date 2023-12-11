@@ -5,6 +5,12 @@ body{
 .brand{
     font-family: 'Dosis', sans-serif;
     font-size: 30px;
+    font-weight: 600;
+    color: #379eff;
+}
+
+.brand:hover{
+    color: #4d86ff;
 }
 
 h1, h2{
@@ -22,11 +28,15 @@ h1, h2{
 .nav-button{
     text-decoration: none;
     color: inherit;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 100%;
     margin: 8px;
     padding: 10px;
+    border-radius: 100%;
+    box-shadow: 0 20px 30px 0 rgba(41, 112, 250, 0.2);
+}
+
+.custom-icon{
+    height: 19px;
+    width: 22px;
 }
 
 .custom-navbar{
@@ -45,6 +55,12 @@ h1, h2{
     margin-right: auto;
     margin-left: auto;
     justify-content: space-around;
+}
+
+@media (max-width: 748px){
+    .industry-feature{
+        flex-direction: column;
+    }
 }
 
 .i-feature-card{
@@ -95,6 +111,12 @@ h1, h2{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+}
+
+@media (max-width:748px){
+    .water-features{
+        flex-direction: column;
+    }
 }
 
 .feature-inner-box{
@@ -277,6 +299,10 @@ h1, h2{
     border-radius: 20px;
 }
 
+.review-box-wrapper{
+    padding: 0;
+}
+
 .review-container{
     margin-bottom: 40px;
 }
@@ -287,11 +313,6 @@ h1, h2{
 
 .star-review > img{
     height: 18px;
-}
-
-.review-box-wrapper{
-    display: flex;
-    width: 33.33%;
 }
 
 .review-profile-img > img{
