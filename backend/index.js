@@ -62,6 +62,10 @@ app.get("/booking", function(req, res){
     res.render("booking");
 });
 
+app.get("/account",function(req, res){
+    res.render("confirm");
+});
+
 
 app.post("/register", function(res, req){
     
@@ -72,7 +76,7 @@ app.post("/register", function(res, req){
         }
         else{
             passport.authenticate("local") (req, res, function(){
-                res.redirect("/confirm");
+                res.redirect("/account");
             });
         }
     });
