@@ -63,13 +63,20 @@ app.get("/booking", function(req, res){
 });
 
 app.get("/account",function(req, res){
-    res.render("confirm");
+    if(req.isAuthenticated()){
+        res.render("confirm");
+    }
+    else {
+        res.redirect("/login");
+    }
+    
 });
 
 
-app.post("/register", function(res, req){
-    
-    User.register({username:req.body.username}, req.body.password, function(err, user){
+app.post("/register", function(req, res){
+    const Users = new User({username: req.body.username});
+
+    User.register(Users, req.body.password, function(err, user){
         if(err){
             console.log(err);
             res.redirect("/register");

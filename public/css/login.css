@@ -8,11 +8,7 @@
     justify-content:center;
     background-image: url("/resources/log-back.jpg");
     background-size:cover;
-    background-repeat: no-repeat;
-   
-    
-    
-    
+    background-repeat: no-repeat;     
 }
 .loged{
    margin:50px;
@@ -21,9 +17,6 @@
    color:white;
    width:800px;
    height:500px;
-
-
-
 }
 
 .loged-data{
@@ -36,6 +29,16 @@
     margin-right:50px;
     margin-top:120px;
 
+}
+
+.register-link{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.register-link > p{
+  font-size: 14px;
 }
 
 
