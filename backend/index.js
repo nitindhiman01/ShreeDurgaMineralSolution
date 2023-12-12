@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const ejs = require("ejs");
-const path = require('path');
+const path = require('node:path');
 const bodyParser = require("body-parser");
 const session = require('express-session');
 const passport = require("passport");
@@ -14,7 +14,7 @@ app.use(express.static('public'));
 app.set("views", path.join(__dirname, "../ui/views"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({
-    extended:true
+    extended:false
 }));
 
 app.use(session({
