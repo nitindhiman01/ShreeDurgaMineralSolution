@@ -14,7 +14,7 @@ app.use(express.static('public'));
 app.set("views", path.join(__dirname, "../ui/views"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({
-    extended:false
+    extended:true
 }));
 
 app.use(session({
@@ -72,6 +72,15 @@ app.get("/account",function(req, res){
     
 });
 
+app.get("/logout", function(req, res){
+    req.logout(function(err){
+        if(err){
+            console.log(err);
+        }
+        res.redirect("/login");
+    });
+});
+
 
 app.post("/register", function(req, res){
     const Users = new User({username: req.body.username});
@@ -87,6 +96,26 @@ app.post("/register", function(req, res){
             });
         }
     });
+});
+
+app.post("/login", function(req,res){
+    const user = new User({
+        username: req.body.username,
+        password: req.body.password
+    });
+
+    req.login(user, function(err){
+        if(err){
+            console.log(err);
+            res.redirect("/login");
+        }
+        else{
+            passport.authenticate("local") (req,res, function(){
+                res.redirect("/account");
+            });
+        }
+    });
+
 });
 
 app.listen(3000, function(req, res){
