@@ -3,13 +3,25 @@ const mongoose = require("mongoose");
 const ejs = require("ejs");
 const path = require('node:path');
 const bodyParser = require("body-parser");
-const session = require('express-session');
-const passport = require("passport");
-const passportLocalMongoose = require("passport-local-mongoose");
+const dotenv = require("dotenv");
+const errorMiddleware = require("./middleware/error");
+
+//database import
+const connectDatabase = require("./config/database");
 
 const app = express();
 
+
 app.use(express.static('public'));
+app.use(express.json());
+
+//route imports
+const product = require("./routes/productRoute");
+
+app.use("", product); 
+
+//config
+dotenv.config({path: "backend/config/config.env"});
 
 app.set("views", path.join(__dirname, "../ui/views"));
 app.set("view engine", "ejs");
@@ -17,37 +29,14 @@ app.use(bodyParser.urlencoded({
     extended:true
 }));
 
-app.use(session({
-    secret: "Our Little Secret",
-    resave: false,
-    saveUninitialized : false
-}));
+//middleware for errors
+app.use(errorMiddleware);
 
-app.use(passport.initialize());
-app.use(passport.session());
-
-mongoose.connect("mongodb://127.0.0.1:27017/mineralWaterDB", {useNewUrlParser : true});
-
-const userSchema = new mongoose.Schema({
-    username : String,
-    password : String
-});
-
-userSchema.plugin(passportLocalMongoose);
-
-const User = new mongoose.model("User", userSchema);
-
-passport.use(User.createStrategy());
-
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+//connecting to the database
+connectDatabase();
 
 app.get("/", function(req, res){
     res.render("index");
-});
-
-app.get("/products", function(req, res){
-    res.render("product");
 });
 
 app.get("/login", function(req, res){
@@ -63,61 +52,11 @@ app.get("/booking", function(req, res){
 });
 
 app.get("/account",function(req, res){
-    if(req.isAuthenticated()){
-        res.render("confirm");
-    }
-    else {
-        res.redirect("/login");
-    }
+    res.render("confirm");
     
 });
 
-app.get("/logout", function(req, res){
-    req.logout(function(err){
-        if(err){
-            console.log(err);
-        }
-        res.redirect("/login");
-    });
-});
-
-
-app.post("/register", function(req, res){
-    const Users = new User({username: req.body.username});
-
-    User.register(Users, req.body.password, function(err, user){
-        if(err){
-            console.log(err);
-            res.redirect("/register");
-        }
-        else{
-            passport.authenticate("local") (req, res, function(){
-                res.redirect("/account");
-            });
-        }
-    });
-});
-
-app.post("/login", function(req,res){
-    const user = new User({
-        username: req.body.username,
-        password: req.body.password
-    });
-
-    req.login(user, function(err){
-        if(err){
-            console.log(err);
-            res.redirect("/login");
-        }
-        else{
-            passport.authenticate("local") (req,res, function(){
-                res.redirect("/account");
-            });
-        }
-    });
-
-});
 
 app.listen(3000, function(req, res){
-    console.log("Server Started!");
+    console.log(`Server Started on port 3000`);
 });
